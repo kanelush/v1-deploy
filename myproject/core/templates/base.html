@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="google-site-verification" content="lVud0uH7p79hWe42vOjXVM_UR3qKxvL-zHR1t-nwSR8" />
+    <meta name="description" content="Servicios de Tecnología y Marketing para negocios que busquen digitalizarse | Chillin Chile ®">
+    <meta name="keywords" content="Chile, Marketing, Marketing Digital, Digital, Tecnología, Negocios, Pymes, Empresas, Online">
+    <meta name="thumbnail" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTihsifG_c4ThAPPj5UPMN4LjKe902sfYALSA&usqp=CAU" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+   <link rel="shortcut icon" href="https://svgshare.com/i/XC7.svg" />
+</head>
+<body>
+    {% include 'navbar.html' %}
+   <br>
+   <br>
+   <br>
+    {% block content %}
+    {% endblock %}
+    <br>
+    <br>
+    <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Chillin Chile</strong> by <a href="https://chillin.cl">kanelush</a>. The source code is licensed
+       <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+   </div>
+  </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+</body>
+</html>
+

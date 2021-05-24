@@ -1,0 +1,32 @@
+{% load static %}
+<nav class="navbar is-transparent is-fixed-top is-active" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{% url 'frontpage' %}">
+        <img src="https://svgshare.com/i/XC7.svg" width="72" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      
+  
+      <div class="navbar-end">
+        <a href="{% url 'frontpage' %}" class="navbar-item">
+            Inicio
+          </a>
+        <a href="{% url 'frontpage' %}" class="navbar-item">
+            Qué Hacemos
+          </a>    
+        <a href="{% url 'contact' %}" class="navbar-item">
+            Contacto
+          </a>
+        
+      </div>
+    </div>
+
+  </nav>
